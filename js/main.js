@@ -3,7 +3,7 @@ $(document).ready(function() {
     studentHeight();
     menuSlide();
     clickableDiv();
-    animateDiv()
+    animateDiv();
     // run function on resize of the window
     $(window).resize(function() {
       studentHeight();
@@ -71,21 +71,26 @@ function makeNewPositionD(){
 }
 
 function animateDiv(){
-    var newqa = makeNewPositionA();
-    var newqb = makeNewPositionB();
-    var newqc = makeNewPositionC();
-    var newqd = makeNewPositionD();
-    $('.bouncey-a').animate({ top: newqa[0], left: newqa[1] }, 500, function(){
-      animateDiv();        
-    });
-    $('.bouncey-b').animate({ top: newqb[0], left: newqb[1] }, 1000, function(){
-      animateDiv();        
-    });
-    $('.bouncey-c').animate({ top: newqc[0], left: newqc[1] }, 2000, function(){
-      animateDiv();        
-    });
-    $('.bouncey-d').animate({ top: newqd[0], left: newqd[1] }, 3000, function(){
-      animateDiv();        
-    });
-    
+  var newqa = makeNewPositionA();
+  var newqb = makeNewPositionB();
+  var newqc = makeNewPositionC();
+  var newqd = makeNewPositionD();
+  $('.bouncey-a').animate({ top: newqa[0], left: newqa[1] }, 500, function(){
+    animateDiv();        
+  });
+  $('.bouncey-b').animate({ top: newqb[0], left: newqb[1] }, 1000, function(){
+    animateDiv();        
+  });
+  $('.bouncey-c').animate({ top: newqc[0], left: newqc[1] }, 2000, function(){
+    animateDiv();        
+  });
+  $('.bouncey-d').animate({ top: newqd[0], left: newqd[1] }, 3000, function(){
+    animateDiv();        
+  });
+  $(window).click(function(){
+    $('.bouncey-a').stop();
+    $('.bouncey-b').stop();
+    $('.bouncey-c').stop();
+    $('.bouncey-d').stop();
+  })
 };

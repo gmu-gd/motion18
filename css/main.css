@@ -171,12 +171,14 @@ header {
 .student:nth-child(n+16) {
     border-bottom: none;
 }
+.stopIt {}
 .bouncey-a {top: 4vh; left: 10vw;}
 .bouncey-b {top: 34vh; left: 80vw;}
 .bouncey-c {top: 67vh; left: 50vw;}
 .bouncey-d {top: 23vh; left: 23vw;}
 .bouncey-a, .bouncey-b, .bouncey-c, .bouncey-d {
     position:fixed;
+    z-index: -1;
 }
 .bouncey-a a, .bouncey-b a, .bouncey-c a, .bouncey-d a {
     font-size: 4rem;
