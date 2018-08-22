@@ -171,27 +171,6 @@ header {
 .student:nth-child(n+16) {
     border-bottom: none;
 }
-.stopIt {}
-.bouncey-a {top: 4vh; left: 10vw;}
-.bouncey-b {top: 34vh; left: 80vw;}
-.bouncey-c {top: 67vh; left: 50vw;}
-.bouncey-d {top: 23vh; left: 23vw;}
-.bouncey-a, .bouncey-b, .bouncey-c, .bouncey-d {
-    position:fixed;
-    z-index: -1;
-}
-.bouncey-a a, .bouncey-b a, .bouncey-c a, .bouncey-d a {
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: bold;
-    opacity: .75;
-}
-.bouncey-a a:hover, .bouncey-b a:hover, .bouncey-c a:hover, .bouncey-d a:hover {
-    opacity: 1;
-    border: none;
-    color: dodgerblue;
-}
 .textblock {
     padding: 25px;
     width: 50%;
@@ -312,6 +291,7 @@ li.heading {
 }
 .bg-db {background-color: dodgerblue;}
 .print-only {display: none;}
+ul.decorate {list-style-type: initial; padding-left: 20px;}
 ul.web-meta {margin: 0; padding: 0;}
 .web-meta li {float: left;}
 /* ==========================================================================
