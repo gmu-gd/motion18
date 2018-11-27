@@ -4,7 +4,8 @@ $(document).ready(function() {
     menuSlide();
     clickableDiv();
     animateDiv();
-    printLink();
+    // printLink();
+    limit();
     // run function on resize of the window
     $(window).resize(function() {
       studentHeight();
@@ -39,11 +40,11 @@ function clickableDiv() {
   });
 }
 
-function printLink() {
-  var url = $(location).attr('href');
-  console.log(date);
-  $('#page-url').text(url);
-}
+// function printLink() {
+//   var url = $(location).attr('href');
+//   console.log(date);
+//   $('#page-url').text(url);
+// }
 
 var h = $(window).height() - 50;
 var w = $(window).width() - 50;
@@ -100,4 +101,13 @@ function animateDiv(){
     $('.bouncey-c').stop();
     $('.bouncey-d').stop();
   })
-};
+}
+
+function limit(){
+  var limits = ["Remake someone else's video as your video", "Make it in 10 minutes", "Always zooming in", "Must use 10 sound effects from my folder of sound effects", "Must be stop motion", "Must use comic sans", "Must use stock footage", "Must have 10 transitions", "All analog", "Make it ugly", "Only found things", "Must use photoshop", "Must use only shapes", "No text", "Only text but no words", "No recognizable images", "Background can't be white", "All photos", "Black and white only", "At least 3 colors", "At least 2 fonts", "No digital type", "Use 2 After Effects effects", "No presets", "Have 1 image"];
+  var rand = Math.floor(Math.random() * limits.length);
+  var limit = limits[rand];
+  console.log(rand);
+  console.log(limit);
+  $('.limit').text(limit);
+}
